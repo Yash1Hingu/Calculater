@@ -17,8 +17,13 @@ function calcultion(){
     }
     else if(choice == "division")
     {
+        if (b == 0) {
+            document.getElementById("answer").value = "Undefinite";
+        }
+        else{
         c = a/b;
         document.getElementById("answer").value = c;
+        }
     }
     else if(choice == "multiplaction"){
         c = a*b;
